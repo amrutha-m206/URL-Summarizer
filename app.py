@@ -6,17 +6,10 @@ from langchain.chains.summarize import load_summarize_chain
 from langchain_community.document_loaders import YoutubeLoader, UnstructuredURLLoader
 import nltk
 from nltk.data import find
-import nltk
-from nltk.data import find, download
 
-# Ensure 'wordnet' data is downloaded
-try:
-    find('corpora/wordnet.zip')
-except LookupError:
-    download('wordnet', download_dir='/tmp/nltk_data')  # Download to a temp directory
 
-# Add NLTK data path to the environment variable
-nltk.data.path.append('/tmp/nltk_data')
+# Set the download directory
+nltk.download('wordnet', download_dir=r'C:\Users\amrut\nltk_data')
 
 
 # Streamlit app configuration
