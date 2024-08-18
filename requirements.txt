@@ -9,4 +9,3 @@ nltk
 validators
 streamlit
 langchain_groq
-wordnet
