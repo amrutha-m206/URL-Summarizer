@@ -4,6 +4,8 @@ from langchain.prompts import PromptTemplate
 from langchain_groq import ChatGroq
 from langchain.chains.summarize import load_summarize_chain
 from langchain_community.document_loaders import YoutubeLoader, UnstructuredURLLoader
+import nltk
+nltk.download('wordnet') 
 
 # Streamlit app configuration
 st.set_page_config(page_title="Summarize Youtube Videos/Websites", page_icon="📜")
