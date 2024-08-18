@@ -5,7 +5,15 @@ from langchain_groq import ChatGroq
 from langchain.chains.summarize import load_summarize_chain
 from langchain_community.document_loaders import YoutubeLoader, UnstructuredURLLoader
 import nltk
-nltk.download('wordnet') 
+from nltk.data import find
+from nltk import download
+
+# Ensure 'wordnet' data is downloaded
+try:
+    find('corpora/wordnet.zip')
+except LookupError:
+    download('wordnet')
+
 
 # Streamlit app configuration
 st.set_page_config(page_title="Summarize Youtube Videos/Websites", page_icon="📜")
