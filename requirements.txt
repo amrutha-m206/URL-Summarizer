@@ -1,0 +1,11 @@
+langchain
+langchain-community
+langchain-text-splitters
+validators==0.28.1
+youtube_transcript_api
+unstructured
+pytube
+nltk
+validators
+streamlit
+langchain_groq
