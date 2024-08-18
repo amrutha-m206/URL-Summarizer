@@ -5,11 +5,7 @@ from langchain_groq import ChatGroq
 from langchain.chains.summarize import load_summarize_chain
 from langchain_community.document_loaders import YoutubeLoader, UnstructuredURLLoader
 import nltk
-from nltk.data import find
-
-
-# Set the download directory
-nltk.download('wordnet', download_dir=r'C:\Users\amrut\nltk_data')
+nltk.download('wordnet')
 
 
 # Streamlit app configuration
